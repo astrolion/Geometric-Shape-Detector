@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.util.Scanner;
-
 import javax.imageio.ImageIO;
 
 public class Main {
@@ -29,7 +28,6 @@ public class Main {
 			InputStream in = new ByteArrayInputStream(fileContent);
 			BufferedImage bi = ImageIO.read(in);
 			BufferedImage temp = bi;
-			
 			Processing obj = new Processing(temp);
 			
 			

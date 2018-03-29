@@ -21,7 +21,7 @@ public class Main {
 		File fi = new File(imageName);
 		
 		String imageFormat = formetName(imageName);
-		System.out.println(imageFormat);
+		System.out.println("Image Format: "+imageFormat);
 		
 		byte[] fileContent;
 
@@ -31,11 +31,12 @@ public class Main {
 			InputStream in = new ByteArrayInputStream(fileContent);
 			BufferedImage bi = ImageIO.read(in);
 			BufferedImage temp = bi;
+			
 			Processing obj = new Processing(temp,imageFormat);
 
 		} catch (IOException e) {
 			System.out.println("Error Mesage : " + e.getMessage());
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 
 	}
@@ -43,6 +44,7 @@ public class Main {
 	/*
 	 * Extracting image format from image
 	 */
+	
 	public static String formetName(String s) {
 		String ret = "";
 		int len = s.length();

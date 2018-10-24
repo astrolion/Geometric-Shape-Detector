@@ -40,6 +40,9 @@ public class Processing {
 	{
 		ArrayList<Cor> ret = new ArrayList();
 		
+		/*
+		 * calculating average pixel value
+		 */
 		double tot = 0.00;
 		for(int i=0;i<BuffImage.getWidth();i++){
 			for(int j=0;j<BuffImage.getHeight();j++){
@@ -50,6 +53,9 @@ public class Processing {
 		
 		double avarage = tot / ( 1.00 * BuffImage.getHeight() * BuffImage.getWidth() );
 		
+		/*
+		 * spiting points between two section
+		 */
 		int cnt = 0;
 		for(int i=0;i<BuffImage.getWidth();i++){
 			for(int j=0;j<BuffImage.getHeight();j++){
@@ -63,8 +69,14 @@ public class Processing {
 		int cnt2 = BuffImage.getHeight() * BuffImage.getWidth();
 		cnt2-= cnt;
 		
+		
 		int red = new Color(255,0,0).getRGB();
 		int green = new Color(0,128,0).getRGB();
+		
+		
+		/*
+		 * getting required points
+		 */
 		
 		for(int i=0;i<BuffImage.getWidth();i++){
 			for(int j=0;j<BuffImage.getHeight();j++){
@@ -91,6 +103,9 @@ public class Processing {
 		return ret;
 	}
 	
+	/*
+	 * write an image for testing purpose 
+	 */
 	public void writeImage() throws IOException
 	{
 		//String formetName = temp.get

@@ -1,4 +1,8 @@
 
+/*
+ * Class for Cartesian Coordinate 
+ * 
+ */
 public class Cor {
 	public int x,y;
 	

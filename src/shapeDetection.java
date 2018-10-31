@@ -1,7 +1,7 @@
 /*
  * It's the challenging class of the project. 
  * ArrayList points contains Cartesian points of the object .
- * Aim of the class to detecting geometric shapes from points.
+ * Aim of the class is to detecting geometric shapes from points.
  */
 
 import java.util.ArrayList;
